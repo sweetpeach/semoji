@@ -15,6 +15,10 @@
 ./union_validation_emoji_emotions.tweet
 ./union_test_emoji_emotions.tweet
     The train, validation, and test set, including the predicted emotions
+    Note that for tweet ID all-N with N < 589000 we do not have access to the original Twitter ID.
+    Please contact Francesco Barbieri for their dataset in their EACL 2017 paper titled "Are Emoji
+    Predictable?" to get the list of tweets. The concatenation of 20_train, 20_validation, and
+    20_test form the list of 589000 tweets, which are subsequently mapped into tweet ID all-N.
 
 ./union_tweet_to_twitter.map
     The mapping from our internal tweet ID (e.g., all-589001, crawled-153) into Twitter ID
