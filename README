@@ -1,0 +1,25 @@
+########################
+# Description of files #
+########################
+05 Apr 2019
+
+./union_svm_bow_vs_combi_annotated.tsv
+    Human judgments on Union dataset
+./union_svm_bow_vs_combi.order
+    Since the emojis are randomized, this file provides the indices of [original, bow, combi] emojis
+    respectively. For example [2, 1, 0] means the original emoji is presented as Third Emoji, emoji
+    predicted by BoW system is presented as Second Emoji, and emoji predicted by combi system is
+    presented as First Emoji (and the raters rated accordingly)
+
+./union_train_emoji_emotions.tweet
+./union_validation_emoji_emotions.tweet
+./union_test_emoji_emotions.tweet
+    The train, validation, and test set, including the predicted emotions
+
+./union_tweet_to_twitter.map
+    The mapping from our internal tweet ID (e.g., all-589001, crawled-153) into Twitter ID
+    (e.g., 812015924374974464, 965773311283118080), because we cannot distribute the tweet texts
+
+./semoji_utils.py
+    The utility script to preprocess the downloaded tweets.
+    See the main() function to see how it can be used to produce the final preprocessed tweets.
